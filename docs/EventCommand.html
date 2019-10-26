@@ -1,0 +1,491 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>イベント、コマンド、スケジューリング · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ErrorDefer.html" />
+    
+    
+    <link rel="prev" href="Define.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索すると入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Environment.html">
+            
+                <a href="Environment.html">
+            
+                    
+                    環境設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Tutorial.html">
+            
+                <a href="Tutorial.html">
+            
+                    
+                    チュートリアル
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="HelloWorld.html">
+            
+                <a href="HelloWorld.html">
+            
+                    
+                    Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Basic.html">
+            
+                <a href="Basic.html">
+            
+                    
+                    基礎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Operator.html">
+            
+                <a href="Operator.html">
+            
+                    
+                    演算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Function.html">
+            
+                <a href="Function.html">
+            
+                    
+                    関数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Collection.html">
+            
+                <a href="Collection.html">
+            
+                    
+                    リスト、マップ、YAML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="ArrayStr.html">
+            
+                <a href="ArrayStr.html">
+            
+                    
+                    配列、文字列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Control.html">
+            
+                <a href="Control.html">
+            
+                    
+                    制御文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Java.html">
+            
+                <a href="Java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="Define.html">
+            
+                <a href="Define.html">
+            
+                    
+                    Define
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.10" data-path="EventCommand.html">
+            
+                <a href="EventCommand.html">
+            
+                    
+                    イベント、コマンド、スケジューリング
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="ErrorDefer.html">
+            
+                <a href="ErrorDefer.html">
+            
+                    
+                    エラー処理、遅延実行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="Builtin.md">
+            
+                <span>
+            
+                    
+                    ビルトイン関数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBookで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >イベント、コマンド、スケジューリング</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x3001;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3001;&#x30B9;&#x30B1;&#x30B8;&#x30E5;&#x30FC;&#x30EA;&#x30F3;&#x30B0;">&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x3001;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3001;&#x30B9;&#x30B1;&#x30B8;&#x30E5;&#x30FC;&#x30EA;&#x30F3;&#x30B0;</h1>
+<p>&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x3092;&#x958B;&#x767A;&#x3059;&#x308B;&#x4E0A;&#x3067;&#x3001;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x30CF;&#x30F3;&#x30C9;&#x30E9;&#x30FC;&#x306E;&#x767B;&#x9332;&#x3001;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306E;&#x5B9F;&#x88C5;&#x3001;&#x51E6;&#x7406;&#x306E;&#x30B9;&#x30B1;&#x30B8;&#x30E5;&#x30FC;&#x30EA;&#x30F3;&#x30B0;&#x306F;&#x5FC5;&#x9808;&#x3067;&#x3059;&#x3002;
+MCScript&#x3067;&#x306F;&#x3001;&#x5C02;&#x7528;&#x306E;&#x69CB;&#x6587;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x4E0A;&#x8A18;&#x51E6;&#x7406;&#x3092;&#x7C21;&#x6F54;&#x306B;&#x8A18;&#x8FF0;&#x51FA;&#x6765;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="&#x30A4;&#x30D9;&#x30F3;&#x30C8;">&#x30A4;&#x30D9;&#x30F3;&#x30C8;</h2>
+<p>&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x30CF;&#x30F3;&#x30C9;&#x30E9;&#x30FC;&#x306E;&#x767B;&#x9332;&#x306F;&#x3001;&#x975E;&#x5E38;&#x306B;&#x7C21;&#x5358;&#x3067;&#x3059;&#x3002;
+@&#x306E;&#x30DE;&#x30FC;&#x30AF;&#x306E;&#x5F8C;&#x306B;Event&#x540D;&#x3092;&#x8A18;&#x8FF0;&#x3057;&#xFF08;Event&#x306F;&#x7701;&#x7565;&#xFF09;&#x3001;&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x5185;&#x306B;&#x51E6;&#x7406;&#x3092;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x3060;&#x3051;&#x3067;&#x3059;&#x3002;
+&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x5185;&#x3067;&#x306F;&#x3001;event&#x5B9A;&#x6570;&#x306B;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x304C;&#x6E21;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+<pre><code>@PlayerInteract {
+    event.player.sendMessage(&quot;interact&quot;)
+}
+</code></pre><p>EventPriority&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x540D;&#x306E;&#x5F8C;&#x306B;&#x62EC;&#x5F27;&#x3067;&#x8A18;&#x8FF0;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code>@PlayerInteract(LOWEST) {
+    event.player.sendMessage(&quot;lowest&quot;)
+}
+</code></pre><h2 id="&#x30B3;&#x30DE;&#x30F3;&#x30C9;">&#x30B3;&#x30DE;&#x30F3;&#x30C9;</h2>
+<p>&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306E;&#x5B9F;&#x88C5;&#x306F;&#x3001;&#x307B;&#x307C;&#x95A2;&#x6570;&#x5BA3;&#x8A00;&#x3068;&#x540C;&#x3058;&#x3067;&#x3059;&#x3002;
+&#x95A2;&#x6570;&#x540D;&#x3092;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x540D;&#x3068;&#x3057;&#x3066;&#x8A18;&#x8FF0;&#x3057;&#x3001;&#x5F15;&#x6570;&#x306B;&#x305D;&#x306E;&#x5F8C;&#x306B;&#x7D9A;&#x304F;&#x6587;&#x5B57;&#x5217;&#x304C;&#x4EE3;&#x5165;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;
+&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x5B9F;&#x884C;&#x6642;&#x3001;&#x5F15;&#x6570;&#x306E;&#x6570;&#x304C;&#x4E00;&#x81F4;&#x3057;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306E;&#x307F;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;
+&#x95A2;&#x6570;&#x5185;&#x3067;&#x306F;&#x3001;sender&#x5B9A;&#x6570;&#x306B;CommandSender&#x304C;&#x6E21;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+<pre><code>command test(arg1, arg2) {
+    sender.sendMessage(arg1 + &quot;:&quot; + arg2)
+}
+</code></pre><p>minecraft</p>
+<pre><code>/test arg1 arg2 # arg1:arg2
+/test arg1 # nothing
+</code></pre><p>&#x95A2;&#x6570;&#x540C;&#x69D8;&#x306B;&#x3001;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x5F15;&#x6570;&#x304C;&#x5229;&#x7528;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<pre><code>command test(arg1, arg2: &quot;arg2&quot;) {
+    sender.sendMessage(arg1 + &quot;:&quot; + arg2)
+}
+</code></pre><pre><code>/test arg1 arg2 # arg1:arg2
+/test arg1 # arg1:arg2
+</code></pre><p>&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306E;&#x5F15;&#x6570;&#x3092;&#x914D;&#x5217;&#x3068;&#x3057;&#x3066;&#x53D7;&#x3051;&#x53D6;&#x308A;&#x305F;&#x3044;&#x5834;&#x5408;&#x3001;~&#x3092;&#x95A2;&#x6570;&#x540D;&#x306E;&#x524D;&#x306B;&#x3064;&#x3051;&#x307E;&#x3059;&#x3002;
+&#x3053;&#x306E;&#x5834;&#x5408;&#x3001;&#x5F15;&#x6570;&#x306E;&#x6570;&#x306B;&#x304B;&#x304B;&#x308F;&#x3089;&#x305A;&#x5E38;&#x306B;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+<pre><code>command ~test(args) {
+    for (arg in args) {
+        sender.sendMessage(arg)
+    }
+}
+</code></pre><pre><code>/test 1 2 3 4 5
+/*
+1
+2
+3
+4
+5
+*/
+</code></pre><h2 id="&#x30B9;&#x30B1;&#x30B8;&#x30E5;&#x30FC;&#x30EA;&#x30F3;&#x30B0;">&#x30B9;&#x30B1;&#x30B8;&#x30E5;&#x30FC;&#x30EA;&#x30F3;&#x30B0;</h2>
+<p>MCScript&#x3067;&#x51E6;&#x7406;&#x3092;&#x30B9;&#x30B1;&#x30B8;&#x30E5;&#x30FC;&#x30EA;&#x30F3;&#x30B0;&#x3059;&#x308B;&#x5834;&#x5408;&#x3001;runnable&#x5F0F;&#x3092;&#x4F7F;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<pre><code>r = runnable {
+    Println(&quot;test&quot;)
+}
+
+r.run() # runTask(PLUGIN)
+r.run(5) # runTaskLater(PLUGIN, 5)
+r.run(0, 1) # runTaskTimer(PLUGIN, 0, 1)
+</code></pre><p>runnable&#x5F0F;&#x3067;&#x306F;&#x3001;&#x6700;&#x5927;&#x5B9F;&#x884C;&#x56DE;&#x6570;&#x3092;&#x6307;&#x5B9A;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<pre><code>runnable(5) {
+    Println(getCount())
+}.run(0, 1)
+/*
+5
+4
+3
+2
+1
+*/
+</code></pre><p>runnable&#x5F0F;&#x306E;&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x5185;&#x3067;&#x306F;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x304C;&#x5229;&#x7528;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<ul>
+<li>cancel()</li>
+<li>isCancelled()</li>
+<li>getTaskId()</li>
+<li>setCount(int)</li>
+<li>getCount()</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Define.html" class="navigation navigation-prev " aria-label="Previous page: Define">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ErrorDefer.html" class="navigation navigation-next " aria-label="Next page: エラー処理、遅延実行">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"イベント、コマンド、スケジューリング","level":"1.3.10","depth":2,"next":{"title":"エラー処理、遅延実行","level":"1.3.11","depth":2,"path":"docs/ErrorDefer.md","ref":"docs/ErrorDefer.md","articles":[]},"previous":{"title":"Define","level":"1.3.9","depth":2,"path":"docs/Define.md","ref":"docs/Define.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"docs/EventCommand.md","mtime":"2019-09-28T23:30:12.520Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-26T10:14:19.496Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
