@@ -30,8 +30,8 @@ REPLモード中は、チャットをすべてスクリプトとして解釈し�
 スクリプトを複数行に分けて入力可能です。
 ```
 /mcs repl
-a = 1
-for (x in Range(5)) {
+a = 0
+for x in 1..5 {
     a += x
 }
 /mcs repl
