@@ -44,7 +44,7 @@ void call(String str, int i) {
 ```
 ```
 array = Array(int, 5);
-for i in 1..5 {
+for i in 0 until 5 {
     array[i] = i;
 }
 call(vararg array)
