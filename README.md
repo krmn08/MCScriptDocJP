@@ -9,4 +9,4 @@ MCScriptはSpigotプラグインの開発に特化したプログラミング言
 * github: https://github.com/krmn08/MCScript
 * twitter: https://twitter.com/krmndev
 
-Version 1.0
+Version 2.0
