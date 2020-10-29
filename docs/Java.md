@@ -14,6 +14,10 @@ const Calendar = java.util.Calendar
 Calender # ClassObject class
 Calender.class # Calendar class
 ```
+また、ワイルドカードを使ったインポートもサポートしています。
+```
+import java.util.*
+```
 ## オブジェクトの生成
 Javaと違いオブジェクトの生成時にnewを付ける必要はありません。
 ```
